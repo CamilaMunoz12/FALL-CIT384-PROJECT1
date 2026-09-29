@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A personal website about baking and cooking.">
+    <title>Camila's Kitchen | Home</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<header>
+    <h1>Camila's Kitchen</h1>
+    <p>Baking & cooking has always been a passion of mine. I started from a young age so I have found this to be my peace although it can get chaotic sometimes lol.</p>
+
+    <nav>
+        <ul>
+        <li>
+        <a href="index.html" title="Go to the home page">Intro</a>
+        </li>
+        <li>
+        <a href="baking.html" title="View baking recipes">Baking</a>
+        </li>
+        <li>
+        <a href="cooking.html" title="View cooking recipes">Cooking</a>
+        </li>
+        <li>
+        <a href="favorites.html" title="View my favorite recipes">Favorites</a>
+        </li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+
+        <section>
+        <h2>Welcome to my blog where I will share some of many things I have done!</h2>
+
+        <p>
+        The purpose of this blog is to motivate and encouarge people to find the bright side to something we might not like at first.
+        Here I will share some of my favorite foods, recipes, and kitchen tips.
+        Whether I am making something sweet or preparing a full meal,
+        I enjoy trying new recipes and learning new techniques and allow people around me enjoy when I have created.
+        </p>
+        </section>
+
+        <section>
+            <h2>Featured Recipe</h2>
+
+            <!-- NEW HTML ELEMENT: figure. I am using it to group photographs related to the featured recipe. -->
+            <figure>
+            <img src="images/cookies.jpg"
+                alt="Tres Leches that looks delicous"
+                width="500"
+                height="350">
+
+            <figcaption>Homemade chocolate chip cookies.</figcaption>
+            </figure>
+
+            <h3>Tres Leches</h3>
+
+            <p>
+                Chocolate chip cookies are one of my favorite desserts to bake.
+                They are simple to make and are best when they are warm and
+                fresh from the oven.
+            </p>
+
+            <p>
+                <a href="baking.html" title="See the chocolate chip cookie recipe">
+                    View the baking recipes
+                </a>
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Choose a Recipe Category</h2>
+
+            <p>Select a category to see some of the foods featured on this website.</p>
+
+            <select name="recipe">
+                <!-- NEW HTML ELEMENT: optgroup. I am using it to separate baking recipes from cooking recipes. NEW HTML ATTRIBUTE: label
+                Here it labels this group of options as Baking. -->
+                <optgroup label="Baking">
+                    <option value="Tres Leches">Tres Leches Cake</option>
+                    <option value="Tiramisu">Tiramisu Cake</option>
+                    <option value="Brownies">Brownies</option>
+                </optgroup>
+
+                <optgroup label="Cooking">
+                    <option value="Garnachas">Garnachas</option>
+                    <option value="Chiles Rellenos">Chiles Rellenos</option>
+                    <option value="Enchiladas">Enchiladas</option>
+                </optgroup>
+            </select>
+        </section>
+
+
+        <section>
+            <h2>Listen to a Baking Tip</h2>
+
+            <p>
+                Listen to a short audio clip with one of my baking tips.
+            </p>
+
+            <!-- NEW HTML ELEMENT: audio. I am using it to play a short audio recording about baking. NEW HTML ATTRIBUTE: controls -->
+            <audio controls>
+                <source src="audio/baking-tip.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+
+        <section>
+            <h2>Kitchen Advice</h2>
+
+            <!-- NEW HTML ATTRIBUTE: cite. I am using it to identify the online source of the quotation(s) -->
+            <blockquote cite="https://example.com">
+                Good cooking begins with preparation and patience.
+            </blockquote>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Camila's Kitchen | CIT 384 Project</p>
+    </footer>
+
+</body>
+</html>
