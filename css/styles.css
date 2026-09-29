@@ -1,114 +1,283 @@
-html, body {
-	background: #663399; /* Beccapurple */
-	margin: 0;
+html {
+    background: #bfe8e6;
+    margin: 0;
 }
-h1, h2, h3, h4, h5, h6, p {
-	margin: 0;
-	padding: 0;
-}
-h1, h2, h3, h4, h5, h6 {
-	color: rgb(107, 107, 132);
-}
+
 body {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 100%;
-	width: 80%;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 2.5% 2.5% 0;
-	background: white;
-	line-height: 1.8;
+    font-family: Candara, Calibri, "Segoe UI", sans-serif;
+    font-size: 100%;
+    width: 88%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0;
+    background: #dff5f3;
+    color: #344b4b;
+    line-height: 1.7;
 }
-h1 {
-	font: 1.6em Verdana, Geneva, sans-serif;
-	margin-bottom: .4em;
-	color: rgb(83, 104, 138);
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
 }
-h2 {
-	font: 3.2em Georgia, "Times New Roman", Times, serif;
-	margin-bottom: .2em;
+
+
+/* HEADER */
+
+header {
+    text-align: center;
+    padding: 2.5em 2em 1.5em;
+    background: #b9e7e2;
+    border-bottom: 4px solid #449d98;
 }
-h3 {
-	font-size: 1.2em;
+
+header h1 {
+    font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif;
+    font-size: 3.5em;
+    color: #246f6b;
+    margin-bottom: .15em;
 }
-p {
-	margin-bottom: 1em;
-}
-a {
-	color: rgb(184, 126, 84);
-}
-a:hover {
-	color: rgb(120, 97, 55);
-}
-pre {
-	font-size: 1.4em;
-	color: white;
-	padding: .5em 1em;
-	border-left: 1em solid #A68048;
-	background: #666;
-	white-space: pre-wrap;
-	white-space: -moz-pre-wrap;
-	white-space: -pre-wrap;
-	white-space: -o-pre-wrap;
-	word-wrap: break-word;
-	width: 80%;
-}
-pre.wrong {
-	border-left-color: red;
-}
-pre.correct {
-	border-left-color: green;
-}
-dt {
-	font-style: italic;
-	font-size:1.2em;
-}
-dd {
-	margin-bottom: 1.4em;
-}
-table {
-	margin-top: 1em;
-}
-caption {
-	margin: 0;
-	padding: 0;
-	margin-bottom: 1em;
-	text-align: left;
-}
-td, th {
-	padding: 10px;
-}
-.center {
-	text-align: center;
-}
+
 header h2 {
-	padding-bottom: .2em;
-	border-bottom: 1px solid gray;
+    font-family: Candara, Calibri, "Segoe UI", sans-serif;
+    font-size: 1.4em;
+    font-weight: normal;
+    color: #715f96;
+    border-bottom: none;
+    margin-bottom: .5em;
 }
+
+header p {
+    color: #466b69;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    margin-top: 1.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 .5em;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #246f6b;
+    font-weight: bold;
+    background: #d8f3ef;
+    padding: .55em 1em;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background: #d8c9f0;
+    color: #5d4c80;
+}
+
+
+/* MAIN AREA */
+
+main {
+    padding: 2.5em;
+}
+
+h2 {
+    font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif;
+    font-size: 2.2em;
+    color: #246f6b;
+    margin-bottom: .6em;
+}
+
+h3 {
+    font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif;
+    font-size: 1.5em;
+    color: #705b94;
+    margin-bottom: .5em;
+}
+
+p {
+    margin-bottom: 1.2em;
+}
+
+
+/* INTRO SECTION */
+
+.intro {
+    background: #caeeeb;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 14px;
+}
+
+
+/* RECIPE CARDS */
+
+.recipe-card {
+    background: #d9f2df;
+    border: 2px solid #a7d8b3;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    border-radius: 15px;
+}
+
+.recipe-card h3 {
+    color: #557c62;
+}
+
+.recipe-card img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 1em;
+}
+
+
+/* FEATURED RECIPE */
+
+.featured {
+    background: #cdeee7;
+    border-left: 7px solid #449d98;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 12px;
+}
+
+
+/* LAVENDER SIDEBAR */
+
 aside {
-	padding: 1em;
-	background:rgb(83, 104, 138);
-	color: white;
-	margin-bottom: 1em;
+    background: #ded2f3;
+    color: #454056;
+    padding: 1.5em;
+    margin: 2em 0;
+    border-left: 6px solid #9b83c5;
+    border-radius: 12px;
 }
+
+aside h3,
 aside h4 {
-	color: white;
+    color: #655184;
+    margin-bottom: .6em;
 }
-footer {
-	border-top: 1px solid gray;
-	text-align: center;
-	font-size: .8em;
-	line-height: 4em;
-	margin-top: 1em;
+
+
+/* FIGURE */
+
+figure {
+    background: #d9f2df;
+    border: 2px solid #a7d8b3;
+    padding: 1em;
+    margin: 1.5em 0;
+    border-radius: 14px;
 }
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* QUOTES */
+
 blockquote {
-	font-style: italic;
+    background: #e6dcf6;
+    border-left: 6px solid #9b83c5;
+    padding: 1.2em 1.5em;
+    margin: 1.5em 0;
+    border-radius: 10px;
+    font-style: italic;
 }
+
+
+/* LINKS */
+
+a {
+    color: #655184;
+}
+
+a:hover {
+    color: #246f6b;
+}
+
+
+/* AUDIO */
+
+audio {
+    width: 100%;
+    margin: 1em 0;
+}
+
+
+/* SELECT MENU */
+
+select {
+    padding: .7em;
+    background: #d8f3ef;
+    border: 1px solid #75b9b3;
+    border-radius: 8px;
+    font-family: Candara, Calibri, "Segoe UI", sans-serif;
+    font-size: 1em;
+}
+
+
+/* TABLES */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+td,
+th {
+    padding: 10px;
+    border-bottom: 1px solid #9bc8c4;
+}
+
+th {
+    background: #d8c9f0;
+    color: #554673;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #347f7a;
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+    margin-top: 2em;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* HELPER CLASSES */
+
+.center {
+    text-align: center;
+}
+
 .flowRight {
-	float: right;
-	margin-left: 10px;
+    float: right;
+    margin: 0 0 15px 20px;
 }
+
 .flowLeft {
-	float: left;
-	margin-right: 10px;
+    float: left;
+    margin: 0 20px 15px 0;
 }
