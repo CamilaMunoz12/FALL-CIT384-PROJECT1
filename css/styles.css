@@ -48,6 +48,7 @@ header h2 {
 
 header p {
     color: #466b69;
+    margin-bottom: 0;
 }
 
 
@@ -98,9 +99,15 @@ h2 {
 }
 
 h3 {
-    font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif;
+    font-family: Candara, Calibri, "Segoe UI", sans-serif;
     font-size: 1.5em;
     color: #705b94;
+    margin-bottom: .5em;
+}
+
+h4 {
+    font-family: Candara, Calibri, "Segoe UI", sans-serif;
+    color: #557c62;
     margin-bottom: .5em;
 }
 
@@ -116,6 +123,36 @@ p {
     padding: 2em;
     margin-bottom: 2em;
     border-radius: 14px;
+}
+
+
+/* FEATURED RECIPE */
+
+.featured {
+    background: #cdeee7;
+    border-left: 7px solid #449d98;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 12px;
+}
+
+
+/* FIGURE */
+
+figure {
+    width: 55%;
+    margin: 1.5em auto;
+    padding: 1em;
+    background: #d9f2df;
+    border: 2px solid #a7d8b3;
+    border-radius: 14px;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 
@@ -142,17 +179,6 @@ p {
 }
 
 
-/* FEATURED RECIPE */
-
-.featured {
-    background: #cdeee7;
-    border-left: 7px solid #449d98;
-    padding: 2em;
-    margin-bottom: 2em;
-    border-radius: 12px;
-}
-
-
 /* LAVENDER SIDEBAR */
 
 aside {
@@ -170,21 +196,8 @@ aside h4 {
     margin-bottom: .6em;
 }
 
-
-/* FIGURE */
-
-figure {
-    background: #d9f2df;
-    border: 2px solid #a7d8b3;
-    padding: 1em;
-    margin: 1.5em 0;
-    border-radius: 14px;
-}
-
-figure img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+aside ul {
+    margin-bottom: 0;
 }
 
 
@@ -197,6 +210,7 @@ blockquote {
     margin: 1.5em 0;
     border-radius: 10px;
     font-style: italic;
+    color: #454056;
 }
 
 
@@ -228,6 +242,7 @@ select {
     border-radius: 8px;
     font-family: Candara, Calibri, "Segoe UI", sans-serif;
     font-size: 1em;
+    color: #344b4b;
 }
 
 
@@ -237,6 +252,12 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1em;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 1em;
 }
 
 td,
