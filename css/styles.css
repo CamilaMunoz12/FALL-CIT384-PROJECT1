@@ -140,13 +140,18 @@ p {
 /* FIGURE */
 
 figure {
-    width: 55%;
     margin: 1.5em auto;
+    text-align: center;
+}
+
+/* ONLY THE FEATURED IMAGE ON INDEX.HTML */
+
+.featured figure {
+    width: 55%;
     padding: 1em;
     background: #d9f2df;
     border: 2px solid #a7d8b3;
     border-radius: 14px;
-    text-align: center;
 }
 
 figure img {
@@ -178,6 +183,12 @@ figure img {
     margin-bottom: 1em;
 }
 
+/*SMALLER TIRAMISU IMAGE */
+.recipe-card img.tiramisu-image{
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+}
 
 /* LAVENDER SIDEBAR */
 
