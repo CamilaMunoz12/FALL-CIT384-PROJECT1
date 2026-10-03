@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="A personal website about baking and cooking.">
-    <title>Camila's Kitchen | Home</title>
+    <title>From My Kitchen to Yours | Home</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
 <header>
-    <h1>Camila's Kitchen</h1>
+    <h1>From My Kitchen to Yours</h1>
     <p>Baking and cooking have always been passions of mine. I started from a young age
     and have found the kitchen to be my peaceful place, although it can get a little
     chaotic sometimes!</p>
@@ -21,7 +21,7 @@
         <a href="index.html" title="Go to the home page">Intro</a>
         </li>
         <li>
-        <a href="baking.html" title="View baking recipes">Baking</a>
+        <a href="sweet-creations.html" title="View sweet recipes">Sweet Creations</a>
         </li>
         <li>
         <a href="cooking.html" title="View cooking recipes">Cooking</a>
@@ -51,7 +51,7 @@
 
             <!-- NEW HTML ELEMENT: figure. I am using it to group a photograph related to the featured recipe. -->
             <figure>
-            <img src="https://bakewithzoha.com/wp-content/uploads/2024/02/tres-leches-sliced-720x1079.jpg"
+            <img src="images/TresLechesCake.png"
                 alt="Tres Leches topped with berries"
                 width="600">
             </figure>
@@ -66,7 +66,7 @@
             </p>
 
             <p>
-                <a href="baking.html" title="See the Tres Leches recipe">
+                <a href="sweet-creations.html" title="See the Tres Leches recipe">
                     View the Tres Leches recipe
                 </a>
             </p>
@@ -78,13 +78,14 @@
 
             <p>Select a category to see some of the foods featured on this website.</p>
 
-            <select name="recipe">
+            <label for="recipe">Recipe Category:</label>
+            <select name="recipe" id="recipe">
                 <!-- NEW HTML ELEMENT: optgroup. I am using it to separate baking recipes from cooking recipes. NEW HTML ATTRIBUTE: label
                 Here it labels this group of options as Baking. -->
                 <optgroup label="Baking">
                     <option value="Tres Leches">Tres Leches Cake</option>
                     <option value="Tiramisu">Tiramisu Cake</option>
-                    <option value="Brownies">Brownies</option>
+                    <option value="NY Cheesecake">NY Cheesecake</option>
                 </optgroup>
 
                 <optgroup label="Cooking">
@@ -97,13 +98,13 @@
 
 
         <section>
-            <h2>Listen to a Baking Tip</h2>
+            <h2>Something I've Learned Along the Way</h2>
 
             <p>
-                Listen to a short audio clip with one of my baking tips.
+                Take a moment to listen to a few tips that have helped me overcome kitchen challenges and stay motivated along the way.
             </p>
 
-            <!-- NEW HTML ELEMENT: audio. I am using it to play a short audio recording about baking. NEW HTML ATTRIBUTE: controls -->
+            <!-- NEW HTML ELEMENT: audio. I am using it to play a short audio recording with kitchen tips. NEW HTML ATTRIBUTE: controls -->
             <audio controls>
                 <source src="audio/baking-tip.m4a" type="audio/mp4">
                 Your browser does not support the audio element.
@@ -112,20 +113,20 @@
 
 
         <section>
-            <h2>Kitchen Advice</h2>
+            <h2>Kitchen Inspiration</h2>
 
             <!-- NEW HTML ATTRIBUTE: cite. I am using it to identify the online source of the quotation -->
             <blockquote cite="https://www.brainyquote.com/quotes/julia_child_701529">
          Usually, one's cooking is better than one thinks it is.
             </blockquote>
-            <p>-Julia Child</p> 
+            <p><cite>-Julia Child</cite></p> 
         </section>
 
     </main>
 
 
     <footer>
-        <p>Camila's Kitchen | CIT 384 Project</p>
+        <p>From My Kitchen to Yours | CIT 384 Blog</p>
     </footer>
 
 </body>
